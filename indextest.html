@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+	<title>Basic Angular Application</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+<div ng-controller="mycontroller">
+<table class="table">
+	<thead>
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Mobile Number</th>
+		<th>Address</th>
+	</tr>
+		
+	</thead>
+	
+		<tr ng-repeat="details in office">
+		<td>{{details.name1}}</td>
+		<td>{{details.name2}}</td>
+		<td>{{details.num}}</td>
+		<td>{{details.address}}</td>
+		</tr>
+
+	
+
+</table>
+</div>
+</div>
+<input type="submit" name="submit" value="submit"  class="btn btn-primary">
+<input type="reset" name="reset" value="reset" class="btn btn-success"><br>
+
+<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
